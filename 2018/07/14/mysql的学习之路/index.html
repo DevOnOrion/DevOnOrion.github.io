@@ -112,19 +112,19 @@
 
 
 
-  <meta name="description" content="SELECT gradeName, GROUP_CONCAT(stuName) FROM t_student GROUP BY gradeName;select gradeName,COUNT(stuName) from t_student group by gradeName;count()是聚合函数(数数)。having 是对查询结果的一种筛选。放在分组之后。select gradeName,">
+  <meta name="description" content="SELECT gradeName, GROUP_CONCAT(stuName) FROM t_student GROUP BY gradeName; select gradeName,COUNT(stuName) from t_student group by gradeName;count()是聚合函数(数数)。having 是对查询结果的一种筛选。放在分组之后。select gradeName">
 <meta name="keywords" content="分享">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mysql的学习之路">
 <meta property="og:url" content="http://yoursite.com/2018/07/14/mysql的学习之路/index.html">
 <meta property="og:site_name" content="Tang jun&#39;s blog">
-<meta property="og:description" content="SELECT gradeName, GROUP_CONCAT(stuName) FROM t_student GROUP BY gradeName;select gradeName,COUNT(stuName) from t_student group by gradeName;count()是聚合函数(数数)。having 是对查询结果的一种筛选。放在分组之后。select gradeName,">
+<meta property="og:description" content="SELECT gradeName, GROUP_CONCAT(stuName) FROM t_student GROUP BY gradeName; select gradeName,COUNT(stuName) from t_student group by gradeName;count()是聚合函数(数数)。having 是对查询结果的一种筛选。放在分组之后。select gradeName">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2018/07/14/mysql的学习之路/微信截图_20180714154740.png">
-<meta property="og:updated_time" content="2018-07-14T10:42:21.443Z">
+<meta property="og:updated_time" content="2018-07-15T21:02:48.625Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mysql的学习之路">
-<meta name="twitter:description" content="SELECT gradeName, GROUP_CONCAT(stuName) FROM t_student GROUP BY gradeName;select gradeName,COUNT(stuName) from t_student group by gradeName;count()是聚合函数(数数)。having 是对查询结果的一种筛选。放在分组之后。select gradeName,">
+<meta name="twitter:description" content="SELECT gradeName, GROUP_CONCAT(stuName) FROM t_student GROUP BY gradeName; select gradeName,COUNT(stuName) from t_student group by gradeName;count()是聚合函数(数数)。having 是对查询结果的一种筛选。放在分组之后。select gradeName">
 <meta name="twitter:image" content="http://yoursite.com/2018/07/14/mysql的学习之路/微信截图_20180714154740.png">
 
 
@@ -377,12 +377,24 @@
                 
               
 
-              <time title="创建时间：2018-07-14 15:53:07 / 修改时间：18:42:21" itemprop="dateCreated datePublished" datetime="2018-07-14T15:53:07+08:00">2018-07-14</time>
+              <time title="创建时间：2018-07-14 15:53:07" itemprop="dateCreated datePublished" datetime="2018-07-14T15:53:07+08:00">2018-07-14</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-16 05:02:48" itemprop="dateModified" datetime="2018-07-16T05:02:48+08:00">2018-07-16</time>
               
             
           </span>
@@ -449,10 +461,26 @@
       
 
       
-        <p>SELECT gradeName, GROUP_CONCAT(stuName) FROM t_student GROUP BY gradeName;<br><img src="/2018/07/14/mysql的学习之路/微信截图_20180714154740.png" alt="查询结果"><br><br><br>select gradeName,COUNT(stuName) from t_student group by gradeName;<br><br><br>count()是聚合函数(数数)。<br><br><br>having 是对查询结果的一种筛选。放在分组之后。<br>select gradeName,count(stuName) from t_student group by gradeName having count(stuName) &gt;3;<br><br><br>group by 分组查询：<br>1.单独使用没有意义；<br>2.与group_concat()函数一起使用；<br>3.与聚合函数一起使用；<br>4.与having一起使用（限制输出的结果）；<br>5.与with rollup 一起使用（最后加入一个总和行）；<br><br><br>limit 分页查询<br>select 字段1,字段2,…from 表名 limit 初始位置,一页的记录数;<br><br><br>使用聚合函数进行查询<br>1.count()函数<br>用来统计记录的条数；<br>与group by关键字一起使用；</p>
-<p>create table t_grade (<br>    id int,<br>    stuName varchar (60),<br>    course VARCHAR (60),<br>    score INT<br>);<br>INSERT INTO t_grade (id,stuName,course,score) VALUES(‘1’,’张三’,’语文’,’91’);<br>INSERT INTO t_grade (id,stuName,course,score) VALUES(‘2’,’张三’,’数学’,’90’);<br>INSERT INTO t_grade (id,stuName,course,score) VALUES(‘3’,’张三’,’英语’,’87’);<br>INSERT INTO t_grade (id,stuName,course,score) VALUES(‘4’,’李四’,’语文’,’79’);<br>INSERT INTO t_grade (id,stuName,course,score) VALUES(‘5’,’李四’,’数学’,’95’);<br>INSERT INTO t_grade (id,stuName,course,score) VALUES(‘6’,’李四’,’英语’,’80’);<br>INSERT INTO t_grade (id,stuName,course,score) VALUES(‘7’,’王五’,’语文’,’77’);<br>INSERT INTO t_grade (id,stuName,course,score) VALUES(‘8’,’王五’,’数学’,’81’);<br>INSERT INTO t_grade (id,stuName,course,score) VALUES(‘9’,’王五’,’英语’,’89’);</p>
+        <p>SELECT gradeName, GROUP_CONCAT(stuName) FROM t_student GROUP BY gradeName;<br><img src="/2018/07/14/mysql的学习之路/微信截图_20180714154740.png" alt="查询结果"></p>
+<p>select gradeName,COUNT(stuName) from t_student group by gradeName;<br>count()是聚合函数(数数)。<br>having 是对查询结果的一种筛选。放在分组之后。<br>select gradeName,count(stuName) from t_student group by gradeName having count(stuName) &gt;3;<br>group by 分组查询：<br>1.单独使用没有意义；<br>2.与group_concat()函数一起使用；<br>3.与聚合函数一起使用；<br>4.与having一起使用（限制输出的结果）；<br>5.与with rollup 一起使用（最后加入一个总和行）；</p>
+<p>limit 分页查询<br>select 字段1,字段2,…from 表名 limit 初始位置,一页的记录数;<br>使用聚合函数进行查询<br>1.count()函数<br>用来统计记录的条数；<br>与group by关键字一起使用；</p>
+<blockquote>
+<p>建表语句：<br>create table t_grade (<br>    id int,<br>    stuName varchar (60),<br>    course VARCHAR (60),<br>    score INT<br>);<br>INSERT INTO t_grade (id,stuName,course,score) VALUES(‘1’,’张三’,’语文’,’91’);<br>INSERT INTO t_grade (id,stuName,course,score) VALUES(‘2’,’张三’,’数学’,’90’);<br>INSERT INTO t_grade (id,stuName,course,score) VALUES(‘3’,’张三’,’英语’,’87’);<br>INSERT INTO t_grade (id,stuName,course,score) VALUES(‘4’,’李四’,’语文’,’79’);<br>INSERT INTO t_grade (id,stuName,course,score) VALUES(‘5’,’李四’,’数学’,’95’);<br>INSERT INTO t_grade (id,stuName,course,score) VALUES(‘6’,’李四’,’英语’,’80’);<br>INSERT INTO t_grade (id,stuName,course,score) VALUES(‘7’,’王五’,’语文’,’77’);<br>INSERT INTO t_grade (id,stuName,course,score) VALUES(‘8’,’王五’,’数学’,’81’);<br>INSERT INTO t_grade (id,stuName,course,score) VALUES(‘9’,’王五’,’英语’,’89’);</p>
+</blockquote>
+<blockquote>
 <p>create table t_student (<br>    id int,<br>    stuName VARCHAR (60),<br>    age DOUBLE,<br>    sex VARCHAR (30),<br>    gradeName VARCHAR (60)<br>);<br>INSERT INTO t_student (id,stuName,age,sex,gradeName) VALUES(‘1’,’张三’,’23’,’男’,’一年级’);<br>INSERT INTO t_student (id,stuName,age,sex,gradeName) VALUES(‘2’,’张三丰’,’25’,’男’,’二年级’);<br>INSERT INTO t_student (id,stuName,age,sex,gradeName) VALUES(‘3’,’李四’,’23’,’男’,’一年级’);<br>INSERT INTO t_student (id,stuName,age,sex,gradeName) VALUES(‘4’,’王五’,’22’,’男’,’三年级’);<br>INSERT INTO t_student (id,stuName,age,sex,gradeName) VALUES(‘5’,’珍妮’,’21’,’女’,’一年级’);<br>INSERT INTO t_student (id,stuName,age,sex,gradeName) VALUES(‘6’,’李娜’,’26’,’女’,’二年级’);<br>INSERT INTO t_student (id,stuName,age,sex,gradeName) VALUES(‘7’,’王峰’,’20’,’男’,’三年级’);<br>INSERT INTO t_student (id,stuName,age,sex,gradeName) VALUES(‘8’,’梦娜’,’21’,’女’,’二年级’);<br>INSERT INTO t_student (id,stuName,age,sex,gradeName) VALUES(‘9’,’小黑’,’22’,’男’,’一年级’);<br>INSERT INTO t_student (id,stuName,age,sex,gradeName) VALUES(‘10’,’追风’,’25’,’男’,’二年级’);<br>INSERT INTO t_student (id,stuName,age,sex,gradeName) VALUES(‘11’,’小小张三’,’21’,NULL,’二年级’);<br>INSERT INTO t_student (id,stuName,age,sex,gradeName) VALUES(‘12’,’小张三’,’23’,’男’,’二年级’);<br>INSERT INTO t_student (id,stuName,age,sex,gradeName) VALUES(‘13’,’张三丰小’,’24’,NULL,’二年级’);</p>
+</blockquote>
 <p>select count(*) AS total from t_grade;//一般要搞一个别名，开发的时候有利于jdbc<br>select stuName,count(*) from t-t_grade group by stuName;<br>select stuName, sum(score) from t_grade where stuName = ‘张三’;<br>select stuName, sum(score) from t_grade group by stuName;<br>select stuName,avg(score) from t_grade where stuName=’张三’;<br>select stuName,avg(score) from t_grade group by stuName;<br>select stuName,max(score) from t_grade group by stuName;<br>select stuName,min(score) from t_grade group by stuName;</p>
+<p>内连接为主，遇到坑爹的需求就用外连接；</p>
+<p>create database db_book;<br>use db_book;<br>drop table if exists t_book;</p>
+<p>create table t_book (<br>  id int(11) NOT NULL AUTO_INCREMENT,<br>  bookName varchar(20) default NULL,<br>  price decimal(6,2) default NULL,<br>  author varchar(20) default NULL,<br>  bookTypeId INT(11) default NULL,<br>  primary key (id)<br>  )engine=innodb AUTO_INCREMENT=1 default charset=utf8;</p>
+<p>INSERT INTO t_book VALUES(1,’Java编程思想’,’100.00’,’碍事儿’,1);</p>
+<p>select <em> from t_book,t_bookType;//笛卡尔积<br>select tb.bookName, tb.author, tby.bookTypeName from t_book tb,t_bookType tby where tb.bookTypeId = tby.id;<br>这是内连接，但是罗列的信息不全，如果需求是必须要查出左边全部的，但是右边的值可以是null，这个时候就要采用外连接，外连接分为左外连接和右外连接；<br>select </em> from t_book left join t_bookType on t_book.bookTypeId=t_bookType.id;//意思是把全部的书取出来，类别有没有无所谓<br>select * from t_book right join t_bookType on t_book.bookTypeId=t_bookType.id;//意思是把全部的类别查出来，书有没有无所谓</p>
+<p>多条件查询：<br>where and</p>
+<p>子查询：（把查询结果作为集合来判断操作）<br>IN：(范围性的子查询)<br>select * from t_book where bookTypeId in (select id from t_bookType);</p>
+<p>select * from t_book where bookTypeId not in (select id from t_bookType);</p>
+<p>select * from t_book where price &gt;=(select price FROM t_priceLevel where priceLevel =1);</p>
+<p>exists:(存在)<br>select <em> from t_book where exists (select </em> from t_bookType);<br>select <em> from t_book where not exists (select </em> from t_bookType);<br>– 假如子查询查询到记录，则进行外层查询，否则，不执行外层查询；<br>any:(满足期中任何一个条件)<br>select <em> from t_book where price &gt;= any (select price from t_priceLevel);//即大于最小的那一个<br>select </em> from t_book where price &gt;= all (select price from t_priceLevel);</p>
 
       
     </div>
